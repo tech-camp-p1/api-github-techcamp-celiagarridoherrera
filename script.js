@@ -6,9 +6,9 @@ try {
     const data = response.data;
 
     return{
-        name: data.name || "Nombre no disponible",
+        name: data.name || "Name no available",
         avatar: data.avatar_url,
-        bio: data.bio || "Biografía no disponible",
+        bio: data.bio || "Bio no available",
         followers: data.followers,
         following: data.following,
         repos: data.public_repos,
@@ -70,7 +70,7 @@ document.getElementById("form").addEventListener("submit", async (e) => {
     const username = document.getElementById("search").value;
 
     if (username === "") {
-        alert("Por favor, introduce un nombre de usuario.");
+        alert("Please, introduce username");
         return;
         
     }
